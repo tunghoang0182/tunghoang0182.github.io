@@ -1,264 +1,44 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
+	Aerial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Welcome to my site!</title>
-    
-      <style>
-      /* CSS styles for the snowflake images */
-     .snowflake {
-  position: fixed;
-  top: -10px;
-  z-index: 1000;
-  width: 25px;  /* Change this value to adjust the width of the snowflakes */
-  height: 25px; /* Change this value to adjust the height of the snowflakes */
-  animation-name: snowfall;
-  animation-duration: 3s; /* Change this value to adjust the duration of the animation */
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes snowfall {
-  from {
-    transform: translate(0, -10px);
-  }
-  to {
-    transform: translate(0, 100vh);
-  }
-}
-    </style>
-    
+		<title>Aerial by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    
-    <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
-    
+		<link rel="stylesheet" href="asset_1/css/main.css" />
+		<noscript><link rel="stylesheet" href="asset_1/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-<div id="snowfall-container">
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h2>Hi, My name is Huy Tung Hoang (Eric)<br />
-						I am a Data Analyst</h2>
-						<p2>Welcome to my personal site !</p2>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
 				<!-- Header -->
 					<header id="header">
-						<a href="/" class="logo">About Me</a>
+						<h1>Hoang Tung</h1>
+						<p>Data Analyst &nbsp;&bull;&nbsp; Business Analyst</p><br> <a href="http://html5up.net">Click here to enter my site!</a>
+						<nav>
+							<ul>
+								<li><a href="https://www.linkedin.com/in/eric-tung-hoang-111283221/" class="icon brands fa-linkedin"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							</ul>
+						</nav>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="/">All About Me</a></li>
-							<li><a href="https://my-website.tunghoang23.repl.co/gen">My Projects</a></li>
-							<li><a href="elements.html">Education</a></li>
-              <li><a href="blog.html">My Blogs</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/eric-tung-hoang-111283221/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							
-							<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">2023</span>
-									<h3><a href="#">Professional Summary<br />
-									A Data Analyst</a></h3>
-									<p>As a data analyst, I am skilled in data visualization, statistical analysis, and problem-solving. I have experience working with large datasets and utilizing tools such as Python, SQL, and Excel to extract insights and inform business decisions. I am comfortable presenting findings to both technical and non-technical audiences and enjoy collaborating with cross-functional teams. My goal is to use my analytical skills to drive data-driven decision making and help organizations make informed decisions based on data. With my extensive experience and proven success in analyzing and interpreting complex data, I am confident that I can effectively support your organization's decision-making process and drive significant business growth.</p>
-                  
-                <h3>Feature</h3>
-               
-				
-				<!-- <p>My most recent project involved the analysis of Nobel Prize data using Pandas and Plotly to create visualizations that reveal key insights. To get more information about this project and my other work, including projects that showcase additional skills, please click the button below</p>
-                 <div id="plot"></div>
-                  <div id="plot1"></div>
-                
-                <script>
-                var data = {{ graphJSON | safe }};
-                Plotly.newPlot('plot', data);
-                </script>
-
-              <script>
-                var data1 = {{ graphJSON1 | safe }};
-                Plotly.newPlot('plot1', data1);
-                </script> -->
-
-
-                  
-                
-
-
-
-                  
-								</header>
-                
-								<a href="#" class="image main"><img src="images/cover.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="/gen" class="button large">Click Here !</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts"> 
-								<article>
-									<header>
-							     
-										<h2>Check The weather</a></h2>
-                      </header>
-                  
-                    <form action="/form" method="POST">
-                    <label for="city">Enter a city:</label><br>
-                    <input type="text" id="city" name="city"<br>
-                    <input type="submit" value="Submit">
-                    </form>
-                 
-                  
-                      <center>
-                       <p>{{text}}</p>
-                      </center>
-									
-									
-				
-									<!--<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>-->
-                  
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">BMI Calculator</a></h2>
-									</header>
-								<form action="/form_a" method="POST">
-                <label for="weight">Weight (in kg)</label>
-                <input type="number" id="weight" name="weight"  style="color: black;">
-                <label for="height">Height (in cm)</label>
-                <input type="number" id="height" name="height"  style="color: black;"><br />
-                <input type="submit" value="Submit">
-              </form> 
-              <center> {{text_bmi}} </center>
-                  
-									</ul>
-								</article>
-							
-							</section>
-
-						
-					</div>
-
 				<!-- Footer -->
-					<footer id="footer">
 					
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1213 Leon Ave<br />
-								Greater Sudbury, ON, Canada</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+1(705) 923-9668</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">erichoang0182@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="linkedin.com/in/eric-tung-hoang-111283221" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
 
 			</div>
-</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-    
-     <script> 
-      // Define an array of snowflake images
-var snowflakeImages = [
-  'images/snow01.png',
-  'images/snow02.png',
-  'images/snow03.png'
-];
-
-// Define the number of snowflakes
-var numSnowflakes = 50;  // Change this value to adjust the number of snowflakes
-
-// Get the container element and its dimensions
-var container = document.getElementById('snowfall-container');
-var containerWidth = container.offsetWidth;
-var containerHeight = container.offsetHeight;
-
-// Create a function to generate a random number within a range
-function randomInRange(min, max) {
-  return Math.random() * (max - min) + min;
-}
-
-// Create a function to generate a random snowflake image
-function randomSnowflakeImage() {
-  var index = Math.floor(Math.random() * snowflakeImages.length);
-  return snowflakeImages[index];
-}
-
-// Create a function to create a new snowflake
-function createSnowflake() {
-  var snowflake = document.createElement('img');
-  snowflake.setAttribute('src', randomSnowflakeImage());
-  snowflake.setAttribute('class', 'snowflake');
-  snowflake.style.left = randomInRange(0, containerWidth) + 'px';
-  snowflake.style.animationDuration = randomInRange(5, 10) + 's';
-  container.appendChild(snowflake);
-  // Remove the snowflake from the DOM after 5 seconds
-  setTimeout(function() {
-    container.removeChild(snowflake);
-  }, 5000);
-}
-
-// Create a function to start the snowfall animation
-function startSnowfall() {
-  for (var i = 0; i < numSnowflakes; i++) {
-    setTimeout(createSnowflake, randomInRange(0, 5000));
-  }
-}
-
-// Start the snowfall animation when the page loads
-window.addEventListener('load', startSnowfall);
-       
-     </script>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
